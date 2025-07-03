@@ -1,5 +1,24 @@
-# Vue 3 + Vite
+Aplikacja do Wyświetlania Postów (Zadanie Rekrutacyjne)
+To jest prosta aplikacja front-endowa zbudowana w Vue.js, która wyświetla listę postów pobranych z zewnętrznego API. Projekt został stworzony w ramach zadania rekrutacyjnego.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Dostępna Aplikacja Online
+Aplikacja jest wdrożona i dostępna pod adresem:
+https://cogitech-rekrutacja-adrian-gorny.vercel.app/
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Główne Funkcjonalności
+Pobieranie i wyświetlanie danych: Aplikacja pobiera posty i dane użytkowników (autorów) z JSONPlaceholder API.
+
+Paginacja: Posty są podzielone na strony (10 postów na stronę) z możliwością nawigacji.
+
+Rozwijanie/zwijanie treści: Długa treść postów jest domyślnie skrócona. Użytkownik może ją rozwinąć lub zwinąć.
+
+Usuwanie postów: Możliwość usunięcia posta z listy.
+
+Wyświetlanie autora: Każdy post zawiera przypisane imię i nazwisko autora.
+
+Użyte Technologie
+Vue 3
+
+Vite
+
+SCSS (Sass)
