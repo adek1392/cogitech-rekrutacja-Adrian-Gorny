@@ -1,0 +1,68 @@
+@use '../mixins';
+
+.postItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid rgb(255, 255, 255);
+	box-shadow: 0 0 3px rgb(255, 255, 255);
+	border-radius: 5px;
+
+	@include mixins.tablets {
+		width: 40%;
+		height: 300px;
+		justify-content: space-between;
+	}
+
+	@include mixins.laptops {
+		justify-content: space-between;
+		width: 30%;
+		height: 300px;
+	}
+
+	@include mixins.desktops {
+		justify-content: space-between;
+		width: 25%;
+		height: 300px;
+	}
+
+	.postTitle {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.postText {
+		margin-bottom: 15px;
+
+		.postControlText {
+			cursor: pointer;
+			color: rgb(255, 255, 0);
+			transition: 0.3s;
+		}
+		.postControlText:hover {
+			color: rgba(255, 255, 0, 0.423);
+		}
+	}
+
+	.authorBox {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.deleteBtn {
+		padding: 3px 6px;
+		background-color: rgb(255, 255, 255);
+		font-weight: 600;
+		color: rgb(0, 0, 0);
+		border: none;
+		border-radius: 5px;
+		transition: 0.3s;
+		&:hover {
+			background-color: rgb(255, 99, 71);
+			color: rgb(255, 255, 255);
+		}
+	}
+}
